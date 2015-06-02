@@ -125,7 +125,7 @@ public class PlayaRest extends Configured implements Tool {
       for (Text coValue: coValues) {                              // For each beach
         PlayaRestCoord centro = getLatLong(coValue.toString());
         
-        for (Map.Entry<String, String> entry: mmm.entrySet()) {   // For each restaurant
+        for (Map.Entry<String, String> entry: m.entrySet()) {   // For each restaurant
           PlayaRestCoord res = getLatLong(entry.getValue());
           double d = distance(centro, res);
           
